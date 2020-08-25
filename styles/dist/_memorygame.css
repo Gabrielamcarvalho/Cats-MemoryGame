@@ -57,6 +57,12 @@
   transform: rotateY(180deg);
 }
 
+@media screen and (max-width: 700px) {
+  .memory-game {
+    max-width: 95%;
+    margin: auto;
+  }
+}
 /* modal */
 .modal {
   display: none;
