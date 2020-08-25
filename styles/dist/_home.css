@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.home-container {
+  width: 100%;
+}
+
+.btn {
+  padding: 0.5rem;
+  border: 1px solid #86BA90;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #86BA90;
+  transition: all 1s;
+}
+.btn:hover {
+  color: #4d79c7;
+  border-color: #4d79c7;
+  box-shadow: 1px 1px 5px #4d79c7;
+}
+
+.social-media {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: 1rem;
+  color: black;
+}
+.social-media .icon-link {
+  color: #4d79c7;
+  transform: all 2s;
+  border-radius: 50%;
+  margin: 1px;
+}
+.social-media .icon-link:hover {
+  color: #d66d6d;
+}
+
+.banner {
+  width: 100%;
+  background: url(/images/background-home.png) no-repeat right;
+  background-size: contain;
+  height: 100vh;
+}
+.banner__description {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.banner__description__title {
+  letter-spacing: 0.2rem;
+  font-size: 2.5rem;
+  color: #f5cb5c;
+}
+.banner__description .madeby {
+  margin: 0 1rem 1rem 1rem;
+  font-family: "Domine", serif;
+  font-size: 0.8rem;
+  color: #242423;
+}
+
+@media screen and (min-width: 800px) {
+  .social-media {
+    font-size: 2rem;
+  }
+
+  .banner__description {
+    margin: 3rem;
+    text-align: left;
+  }
+  .banner__description__title {
+    font-size: 4rem;
+  }
+  .banner__description .madeby {
+    margin-left: 1rem;
+  }
+  .banner__description .btn {
+    margin-left: 6rem;
+  }
+}
+.custom-shape-divider-top-1598360221 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1598360221 svg {
+  position: relative;
+  display: block;
+  width: calc(167% + 1.3px);
+  height: 103px;
+}
+
+.custom-shape-divider-top-1598360221 .shape-fill {
+  fill: #4d79c7;
+}
+
+#games {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#games .games__card {
+  width: 80%;
+  margin: 1rem;
+  padding-bottom: 1.5rem;
+  border: 3px dotted #4d79c7;
+  border-radius: 10px;
+  text-align: center;
+}
+#games .games__card:hover {
+  border-style: solid;
+}
+#games .games__card .games__card-img-container {
+  margin: 1rem;
+}
+#games .games__card .games__card-img-container img {
+  width: 60%;
+}
+#games .games__card .games__card-description {
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  color: #242423;
+  font-family: "Domine", serif;
+}
+#games .games__card .btn {
+  color: #f5cb5c;
+  border-color: #f5cb5c;
+}
+#games .games__card .btn:hover {
+  color: #4d79c7;
+  border-color: #4d79c7;
+  box-shadow: 1px 1px 5px #4d79c7;
+}
+
+@media screen and (min-width: 800px) {
+  #games {
+    flex-direction: row;
+  }
+}

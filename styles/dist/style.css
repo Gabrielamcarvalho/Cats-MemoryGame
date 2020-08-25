@@ -1,0 +1,37 @@
+.memory-game__container {
+  min-height: 100vh;
+}
+.memory-game__container .memory-game__title {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
