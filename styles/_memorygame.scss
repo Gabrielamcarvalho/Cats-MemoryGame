@@ -1,5 +1,6 @@
 @import 'typography';
 @import 'colors';
+@import 'root';
 
 .memory-game__container {
   margin: 0;
@@ -7,12 +8,13 @@
   background-color: $beige;
   font-family: $primary-font;
 
+
   .memory-game__title {
     margin-bottom: 1rem;
     padding: 1rem;
     font-weight: 400;
     letter-spacing: 0.2rem;
-    color: $sea-green;
+    color: $grey;
     text-align: center;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px $black;
@@ -41,7 +43,7 @@
     transform: scale(1);
     transform-style: preserve-3d;
     transition: transform .5s;
-  
+    box-shadow: 2px 2px 2px $grey;
   
   &:active {
     transform: scale(0.97);
@@ -69,11 +71,20 @@
   
 }
 @media screen and (max-width: 700px){
+  .memory-game__container {
+   background-color: white;
+
+    
+  }
   .memory-game{
-    max-width: 95%;
+    width: 400px;
     margin: auto;
    
+  .memory-card {
+    width: 45%;
+    height: 30%;
   }
+}
 }
 
   /* modal */
@@ -111,6 +122,7 @@
         padding: 0.3rem 0.5rem;
         font-size: 1rem;
         font-weight: 600;
+        font-family: $secondary-font;
         background-color: transparent;
         border: 1px solid $grey;
         border-radius: 10px;
@@ -121,6 +133,7 @@
             border: 1px solid $sea-green;
             background-color: $black;
         }
+      
     }
   }
 

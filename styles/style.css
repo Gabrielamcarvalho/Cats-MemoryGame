@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 .memory-game__container {
   margin: 0;
   min-height: 100vh;
@@ -13,7 +29,7 @@
   padding: 1rem;
   font-weight: 400;
   letter-spacing: 0.2rem;
-  color: #86BA90;
+  color: #333533;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px #242423;
@@ -49,6 +65,8 @@
   transition: -webkit-transform .5s;
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
+  -webkit-box-shadow: 2px 2px 2px #333533;
+          box-shadow: 2px 2px 2px #333533;
 }
 
 .memory-game .memory-card:active {
@@ -83,9 +101,16 @@
 }
 
 @media screen and (max-width: 700px) {
+  .memory-game__container {
+    background-color: white;
+  }
   .memory-game {
-    max-width: 95%;
+    width: 400px;
     margin: auto;
+  }
+  .memory-game .memory-card {
+    width: 45%;
+    height: 30%;
   }
 }
 
@@ -127,6 +152,7 @@
   padding: 0.3rem 0.5rem;
   font-size: 1rem;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
   background-color: transparent;
   border: 1px solid #333533;
   border-radius: 10px;
@@ -161,6 +187,7 @@
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 a {
@@ -176,6 +203,7 @@ a {
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 a {
